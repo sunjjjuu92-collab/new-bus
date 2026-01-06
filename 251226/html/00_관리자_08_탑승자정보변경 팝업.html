@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index,follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+  <meta name="title" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="../assets/css/common.css">
+   <script src="../assets/js/jquery-1.12.4.min.js"></script>
+  <script src="../assets/js/common.js"></script>
+
+  <title>버스링크 관리자</title>
+</head>
+
+<body class="sub page-form popup-full"><!--  class 추가  [홈 - "home"] ,  [일반 페이지 - "sub"] , [입력 폼 페이지 - "sub page-form"], [ 팝업 - "popup-full"] -->
+    <div class="wraaper">
+      <div class="container">
+        <header class="app-header">
+            <div class="header-inner">
+              <div class="header-title">
+                <a href="javascript:history.back();" class="btn-back" aria-label="뒤로가기"></a>
+                <h1 class="title">승객앱 공지발송</h1><!-- 화면제목   -->
+              </div>
+              <!--// header-title -->
+              <div class="header-actions">
+                <span class="user-name"><em>한국관광</em> 홍길동</span><!-- 사용자 정보-->
+                <a href="#" class="btn-my-page" aria-label="마이페이지"></a><!--  버튼이 없을 경우 class="is-hidden" 추가 -->
+                <button type="button" class="btn-close is-hidden" aria-label="닫기">닫기</button><!--  버튼이 없을 경우 class="is-hidden" 추가 -->
+              </div>
+              <!--// header-actions -->
+            </div>
+        </header>
+        <!--// header -->
+
+
+        <main id="colgroup" class="colgroup">
+            <div id="contents">
+              <div class="inner">
+                <div class="notice-list" id="noticeList">
+                    <div class="notice-top-btn">
+                      <button type="button" class="button arrow type-green js-popup-open" data-target="commonPopup">새공지 발송</button>
+                    </div>
+                    <!--//button-container -->
+                    
+                    <div class="notice-area">
+                      <div class="notice-item">
+                        <div class="notice-header">
+                            <p class="notice-title">07:30 판교역 제목 길어짐 테스트테스트트트트트트트트판교역 제목 길어짐 테스트테스트트트트트트트트판교역 제목 길어짐 테스트테스트트트트트트트트</p><!-- 타이틀명  제목 없을 경우 is-hidden 처리 -->
+                            <div class="notice-meta">
+                              <span class="notice-date">
+                                <span class="date">2026.01.31 <em class="time">14:52</em></span>
+                              </span>
+                              <span class="notice-receiver">수신자수 <strong>123명</strong></span>
+                            </div>
+                            <button class="delete-btn is-modal-open" >닫기</button>
+                        </div>
+                        <!--// notice-header -->
+                        <div class="notice-content">
+                          <div class="notice-content-inner">
+                            18시45분 판교역 서울 지연도착 안내.<br>
+                            현재 제2판교 / 금토동삼거리 / 시흥사거리 / 판교역 인근<br>
+                            도로 정체가 극심하여 지연도착할 예정입니다.<br>
+                            입직원분들의 양해부탁드립니다.
+                          </div>
+                        </div>
+                        <!--// notice-content -->
+                      </div>
+                      <!--// notice-item -->
+                    
+                      <div class="notice-item">
+                        <div class="notice-header">
+                          <p class="notice-title">전체발송</p>
+                          <!-- 타이틀명 -->
+                          <div class="notice-meta">
+                            <span class="notice-date">
+                              <span class="date">2026.01.31 <em class="time">14:52</em></span>
+                            </span>
+                            <span class="notice-receiver">수신자수 <strong>8,000명</strong></span>
+                          </div>
+                          <button class="delete-btn" onclick="deleteNotice(this)">닫기</button>
+                        </div>
+                        <!--// notice-header -->
+                        <div class="notice-content">
+                          <div class="notice-content-inner">
+                            18시45분 판교역 서울 지연도착 안내.<br>
+                            현재 제2판교 / 금토동삼거리 / 시흥사거리 / 판교역 인근<br>
+                            도로 정체가 극심하여 지연도착할 예정입니다.<br>
+                            입직원분들의 양해부탁드립니다.글자 길어짐 테스트글자 길어짐 테스트글자 길어짐 테스트글자 길어짐 테스트글자 길어짐 테스트글자 길어짐 테스트글자 길어짐 테스트글자 길어짐 테스트글자 길어짐 테스트
+                          </div>
+                        </div>
+                        <!--// notice-content -->
+                      </div>
+                      <!--// notice-item -->
+                    
+                      <div class="notice-item">
+                        <div class="notice-header">
+                          <p class="notice-title">전체발송</p>
+                          <!-- 타이틀명 -->
+                          <div class="notice-meta">
+                            <span class="notice-date">
+                              <span class="date">2026.01.31 <em class="time">14:52</em></span>
+                            </span>
+                            <span class="notice-receiver">수신자수 <strong>8,000명</strong></span>
+                          </div>
+                          <button class="delete-btn" onclick="deleteNotice(this)">닫기</button>
+                        </div>
+                        <!--// notice-header -->
+                        <div class="notice-content">
+                          <div class="notice-content-inner">
+                            18시45분 판교역 서울 지연도착 안내.<br>
+                            현재 제2판교 / 금토동삼거리 / 시흥사거리 / 판교역 인근<br>
+                            도로 정체가 극심하여 지연도착할 예정입니다.<br>
+                            입직원분들의 양해부탁드립니다.
+                          </div>
+                        </div>
+                        <!--// notice-content -->
+                      </div>
+                        <!--// notice-item -->
+                    </div>
+                    <!--// notice-area -->
+                </div>
+                <!--// notice-list -->
+              </div>
+              <!--//inner-->
+             </div>
+          <!--//contents -->
+        </main>
+        <!-- //main.colgroup -->
+
+        <div class="app-footer">
+          <div class="inner-area">
+            <button type="button" class="btn-footer btn-footer-home"><span>홈</span></button>
+            <button type="button" class="btn-footer btn-footer-schedule"><span>배차관리</span></button>
+            <button type="button" class="btn-footer btn-footer-tracking"><span>차량관제</span></button>
+            <button type="button" class="btn-footer btn-footer-checking"><span>탑승자승인</span></button>
+            <button type="button" class="btn-footer btn-footer-bookings"><span>에약관리</span></button>
+          </div>
+        </div>
+        <!-- //app-footer -->
+
+        <!-- 공통 전체 팝업 -->
+        <div class="popup-wrap full active" id="commonPopup"><!-- 전체 팝업일 경우 클래스 full 추가, 활성화시 클래스 active 추가 됩니다.  -->
+          <div class="inner-area">
+            <div class="popup-header">
+              <div class="title">탑승자 정보변경</div>
+            </div>
+            <div class="popup-container">
+              <div class="view-contain">
+                <div class="list-box left board">
+                  <div class="list-group">
+
+                    <!-- 아이디 (읽기 전용) -->
+                    <div class="item">
+                      <div class="item-name">
+                        <span class="info-label">아이디</span>
+                      </div>
+                      <div class="item-data">
+                        <span class="info-value">USWEIS</span>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="item-name">
+                        <label class="info-label" for="userName_edit">이름</label>
+                      </div>
+                      <div class="item-data">
+                        <div class="form-box">
+                          <input id="userName_edit" type="text" placeholder="이름">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="item-name">
+                        <label class="info-label" for="empNo_edit">사번</label>
+                      </div>
+                      <div class="item-data">
+                        <div class="form-box">
+                          <input id="empNo_edit" type="text" placeholder="사번">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="item-name">
+                        <label class="info-label" for="department_edit">소속</label>
+                      </div>
+                      <div class="item-data">
+                        <div class="form-box">
+                          <input id="department_edit" type="text" placeholder="소속">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="item-name">
+                        <label class="info-label" for="mobile_edit">휴대폰</label>
+                      </div>
+                      <div class="item-data">
+                        <div class="form-box">
+                          <input id="mobile_edit" type="tel" placeholder="휴대폰">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="put-box right">
+                  <button type="button" class="button type3">변경</button>
+                </div>
+
+              </div>
+              <!--// view-contain -->
+            </div>
+            <!-- //popup-container -->
+
+            <button type="button" class="popup-close">닫기</button>
+          </div>
+        </div>
+        <!-- //공통 전체 팝업 -->
+
+
+
+        <!-- 모달 팝업 -->
+        <div class="modal-overlay" id="deleteModal">
+          <div class="modal">
+            <div class="modal-inner">
+              <div class="modal-message">정말 삭제하시겠습니까?</div>
+              <div class="modal-buttons">
+                <button class="modal-btn-cancel">아니요</button>
+                <button class="modal-btn-confirm">네</button>
+              </div>
+            </div>
+            <button class="modal-btn-close">닫기</button>
+          </div>
+        </div>
+        <!--// 모달 팝업  -->
+      </div>
+      <!--//container-->
+    </div>
+    <!--//wraaper-->
+</body>
+</html>

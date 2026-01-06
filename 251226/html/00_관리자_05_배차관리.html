@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index,follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+  <meta name="title" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="../assets/css/common.css">
+   <script src="../assets/js/jquery-1.12.4.min.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <title>버스링크 관리자</title>
+</head>
+
+<body class="sub"><!--  class 추가  [홈 - "home"] ,  [일반 페이지 - "sub"] , [입력 폼 페이지 - "sub page-form"], [ 팝업 - "popup-full"] -->
+    <div class="wraaper">
+      <div class="container">
+        <header class="app-header">
+          <div class="header-top">
+            <div class="header-inner">
+              <div class="header-title">
+                <a href="javascript:history.back();" class="btn-back" aria-label="뒤로가기"></a>
+                <h1 class="title">배차관리</h1><!-- 화면제목   -->
+              </div>
+              <!--// header-title -->
+
+              <div class="header-actions">
+                <span class="user-name">한국관광 <em>홍길동</em></span><!-- 사용자 정보 -->
+                <div class="btns">
+                  <a href="#" class="btn-my-page" aria-label="마이페이지"></a>
+                  <button type="button" class="btn-logout " aria-label="로그아웃"></button><!--  버튼이 없을 경우 class="is-hidden" 추가 -->
+                </div>
+              </div>
+              <!--// header-actions -->
+            </div>
+            <!--//header-inner -->
+          </div>
+        </header>
+        <!--// header -->
+
+        <main id="colgroup" class="colgroup">
+
+              <div id="contents">
+                <div class="inner">
+                    <section class="route-area">
+
+                        <div class="search-box">
+                          <div class="form-box type2">
+                            <input type="text" placeholder="거래처명, 노선명">
+                            <button type="button" class="button type3">조회</button>
+                          </div>
+                        </div>
+                        <!--// shortcut-area -->
+
+                        <div class="route-list">
+                            <ul class="route-item">
+                              <li>
+                                <a href="#" class=" arrow"><!-- arrow 를  빼면 화살표가 -->
+                                  <div class="r-info">
+                                    <span class="r-agency">놀유니버스</span>
+                                    <p>07:30 판교역 &gt; 놀유니버스</p>
+                                  </div>
+                                  <div class="r-data">
+                                    <span class="r-badge">25 <em>/</em> <strong>34</strong></span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="r-info arrow">
+                                  <div class="r-info">
+                                    <span class="r-agency">[모다] (주)케이브랜즈</span>
+                                    <p>모다아울렛연합 강남역 출퇴근</p>
+                                  </div>
+                                  <div class="r-data">
+                                    <span class="r-badge">25 <em>/</em> <strong>34</strong></span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="arrow">
+                                  <div class="r-info">
+                                    <span class="r-agency">[모다] (주)케이브랜즈</span>
+                                    <p>시청(광화문)08:15(20)/
+                                    08:20(25)/08:25(30)</p>
+                                  </div>
+                                  <div class="r-data">
+                                    <span class="r-badge">25 <em>/</em> <strong>34</strong></span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="arrow">
+                                  <div class="r-info">
+                                    <span class="r-agency">[모다] (주)케이브랜즈</span>
+                                    <p>시청(광화문)08:15(20)/<br>
+                                      08:20(25)/08:25(30)</p>
+                                  </div>
+                                  <div class="r-data">
+                                    <span class="r-badge">25 / <strong>34</strong></span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="arrow">
+                                  <div class="r-info">
+                                    <span class="r-agency">[모다] (주)케이브랜즈</span>
+                                    <p>시청(광화문)08:15(20)/
+                                      08:20(25)/08:25(30)</p>
+                                  </div>
+                                  <div class="r-data">
+                                    <span class="r-badge">25 <em>/</em> <strong>34</strong></span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="arrow">
+                                  <div class="r-info">
+                                    <span class="r-agency">[모다] (주)케이브랜즈</span>
+                                      <p>8:20(25)/08:25(30)</p>
+                                  </div>
+                                  <div class="r-data">
+                                    <span class="r-badge">25 <em>/</em> <strong>34</strong></span>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" class="arrow">
+                                  <div class="r-info">
+                                    <span class="r-agency">[모다] (주)케이브랜즈</span>
+                                    <p> 글자길어짐 테스트글자길어짐 테스트글자길어짐 테스트글자길어짐 테스트글자길어짐 테스트글자길어짐 테스트
+                                      08:20(25)/08:25(30)</p>
+                                  </div>
+                                  <div class="r-data">
+                                    <span class="r-badge">25 <em>/</em> <strong>34</strong></span>
+                                  </div>
+                                </a>
+                              </li>
+
+                            </ul> 
+                        </div>
+                        <!--// route-list-->
+                    </section>
+                    <!--//route-area - 배차관리   -->
+                </div>
+                <!--//inner-->
+              </div>
+              <!--//contents -->
+
+        </main>
+        <!-- //main.colgroup -->
+      
+        <div class="app-footer">
+          <div class="inner-area">
+            <button type="button" class="btn-footer btn-footer-home"><span>홈</span></button>
+            <button type="button" class="btn-footer btn-footer-schedule"><span>배차관리</span></button>
+            <button type="button" class="btn-footer btn-footer-tracking"><span>차량관제</span></button>
+            <button type="button" class="btn-footer btn-footer-checking"><span>탑승자승인</span></button>
+            <button type="button" class="btn-footer btn-footer-bookings"><span>에약관리</span></button>
+          </div>
+        </div>
+        <!--//app-footer -->
+
+        <div class="scrollTop_btn">
+          <button type="button">상단으로 이동</button>
+        </div>
+        <!--// 상단으로 이동   -->
+
+
+
+      </div>
+      <!--//container-->
+    </div>
+    <!--//wraaper-->
+</body>
+</html>

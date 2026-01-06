@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index,follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+  <meta name="title" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="../assets/css/common.css">
+   <script src="../assets/js/jquery-1.12.4.min.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <title>버스링크 관리자</title>
+</head>
+
+<body class="sub"><!--  class 추가  [홈 - "home"] ,  [일반 페이지 - "sub"] , [입력 폼 페이지 - "sub page-form"], [ 팝업 - "popup-full"] -->
+    <div class="wraaper">
+      <div class="container">
+        <header class="app-header">
+          <div class="header-top">
+            <div class="header-inner">
+
+              <div class="header-title">
+                <a href="javascript:history.back();" class="btn-back" aria-label="뒤로가기"></a>
+                <h1 class="title">탑승자승인</h1><!-- 화면제목   -->
+              </div>
+              <!--// header-title -->
+
+              <div class="header-actions">
+                <span class="user-name">한국관광<em>홍길동</em></span><!-- 사용자 정보 -->
+                <a href="#" class="btn-my-page" aria-label="마이페이지"></a>
+                <button type="button" class="btn-logout" aria-label="로그아웃"></button><!--  버튼이 없을 경우 class="is-hidden" 추가 -->
+              </div>
+              <!--// header-actions -->
+            </div>
+          </div>
+        </header>
+        <!--// header -->
+        <main id="colgroup" class="colgroup">
+
+            <div id="contents">
+              <div class="inner">
+                <!-- board-approve - 탑승자 승인 -->
+                 <div class="board-approve">
+                    <!-- 카드 타입  -->
+                    <div class="card-type small-size">
+                      <div class="card-header">
+                        <div class="card-title">
+                          <span class="route-name">놀유니버스</span><!-- 노선 정보명-->
+                          <p class="route-path">
+                            <span class="route-time">07:30</span>
+                            판교역 &gt; 놀유니버스
+                          </p>
+                        </div>
+                      </div>
+                      <a href="#" class="card-more" aria-label="노선 상세 보기"></a>
+                    </div>
+                    <!--// 카드타입  -->
+                    <div class="search-box">
+                      <ul class="form-box flex_grow">
+                        <li>
+                          <select name="" id="">
+                            <option value="">승인상태</option>
+                            <option value="">옵션2</option>
+                            <option value="">옵션3</option>
+                          </select>
+                        </li>
+                        <li><input type="text" placeholder="이름, 아이디"></li>
+                        <li><button type="button" class="button type3">검색</button></li>
+                      </ul>
+                    </div>
+                    <!--// search-box - 3 단 - flex_grow 추가-->
+
+                    <div class="list-header">
+                      <div class="list-summary">
+                        <span class="total">
+                          전체 <strong>89</strong>명
+                        </span>
+                      </div>
+                      <!--//list-summary  -->
+                    
+                      <div class="list-actions">
+                        <button type="button" class="button btn-sm">모두승인</button>
+                        <button type="button" class="button btn-sm">신규등록</button>
+                        <button type="button" class="button btn-sm">모두보기</button>
+                      </div>
+                    </div>
+                    <!--//list-header -->
+
+                    <!-- 데이타 리스트 -->
+                    <ul class="data-list">
+                      <li class="item-row approve-item">
+                        <div class="u-row">
+                          <div class="u-name"><strong>이윤기</strong><span>소속(사번)</span></div>
+                          <div class="u-data"><strong>010.2345.6789</strong><span>USERID</span></div>
+                          <button type="button" class="delete-btn">삭제</button>
+                        </div>
+                        <div class="approve-actions">
+                          <button type="button" class="button btn-sm type4">변경</button>
+                          <button type="button" class="button btn-sm type4">승인완료</button>
+                          <button type="button" class="button btn-sm type4">승인취소</button>
+                          <button type="button" class="button btn-sm type4">로그아웃</button>
+                        </div>
+                      </li>
+                      <li class="item-row approve-item">
+                        <div class="u-row">
+                          <div class="u-name"><strong>이윤기</strong><span>소속(사번)</span></div>
+                          <div class="u-data"><strong>010.2345.6789</strong><span>USERID</span></div>
+                          <button type="button" class="delete-btn">삭제</button>
+                        </div>
+                        <div class="approve-actions">
+                          <button type="button" class="button btn-sm type4">변경</button>
+                          <button type="button" class="button btn-sm type4">승인완료</button>
+                          <button type="button" class="button btn-sm type4">승인취소</button>
+                          <button type="button" class="button btn-sm type4">로그아웃</button>
+                        </div>
+                      </li>
+                      <li class="item-row approve-item">
+                        <div class="u-row">
+                          <div class="u-name"><strong>이윤기</strong><span>소속(사번)</span></div>
+                          <div class="u-data"><strong>010.2345.6789</strong><span>USERID</span></div>
+                          <button type="button" class="delete-btn">삭제</button>
+                        </div>
+                        <div class="approve-actions">
+                          <button type="button" class="button btn-sm type4">변경</button>
+                          <button type="button" class="button btn-sm type4">승인완료</button>
+                          <button type="button" class="button btn-sm type4">승인취소</button>
+                          <button type="button" class="button btn-sm type4">로그아웃</button>
+                        </div>
+                      </li>
+                      <li class="item-row approve-item">
+                        <div class="u-row">
+                          <div class="u-name"><strong>이윤기</strong><span>소속(사번)</span></div>
+                          <div class="u-data"><strong>010.2345.6789</strong><span>USERID</span></div>
+                          <button type="button" class="delete-btn">삭제</button>
+                        </div>
+                        <div class="approve-actions">
+                          <button type="button" class="button btn-sm type4">변경</button>
+                          <button type="button" class="button btn-sm type4">승인완료</button>
+                          <button type="button" class="button btn-sm type4">승인취소</button>
+                          <button type="button" class="button btn-sm type4">로그아웃</button>
+                        </div>
+                      </li>
+                      <li class="item-row approve-item">
+                        <div class="u-row">
+                          <div class="u-name"><strong>이윤기</strong><span>소속(사번)</span></div>
+                          <div class="u-data"><strong>010.2345.6789</strong><span>USERID</span></div>
+                          <button type="button" class="delete-btn">삭제</button>
+                        </div>
+                        <div class="approve-actions">
+                          <button type="button" class="button btn-sm type4">변경</button>
+                          <button type="button" class="button btn-sm type4">승인완료</button>
+                          <button type="button" class="button btn-sm type4">승인취소</button>
+                          <button type="button" class="button btn-sm type4">로그아웃</button>
+                        </div>
+                      </li>
+                    </ul>
+                    <!-- //데이타 리스트 -->
+
+                </div>
+                <!-- board-approve - 탑승자 승인 -->
+              </div>
+              <!--// content_inner -->
+            </div>
+            <!-- //contents -->
+
+        </main>
+        <!-- //main.colgroup -->
+
+        <div class="app-footer">
+          <div class="inner-area">
+            <button type="button" class="btn-footer btn-footer-home"><span>홈</span></button>
+            <button type="button" class="btn-footer btn-footer-schedule"><span>배차관리</span></button>
+            <button type="button" class="btn-footer btn-footer-tracking"><span>차량관제</span></button>
+            <button type="button" class="btn-footer btn-footer-checking"><span>탑승자승인</span></button>
+            <button type="button" class="btn-footer btn-footer-bookings"><span>에약관리</span></button>
+          </div>
+        </div>
+        <!-- //app-footer -->
+
+        <div class="scrollTop_btn">
+          <button type="button">상단으로 이동</button>
+        </div>
+        <!--// 상단으로 이동   -->
+
+        <!-- 공통 전체 팝업 -->
+        <div class="popup-wrap full"><!-- 전체 팝업일 경우 클래스 full 추가, 활성화시 클래스 active 추가 됩니다.  -->
+          <div class="inner-area">
+            <div class="popup-header">
+              <div class="title">탑승자 등록</div>
+            </div>
+            <div class="popup-container">
+
+              내용이 들어갑니다.
+
+            </div>
+            <!-- //popup-container -->
+
+            <button type="button" class="popup-close">닫기</button>
+          </div>
+        </div>
+        <!-- //공통 전체 팝업 -->
+
+
+        <!-- 모달 팝업 -->
+        <div class="modal-overlay" id="deleteModal">
+          <div class="modal">
+            <div class="modal-inner">
+              <div class="modal-message">정말 삭제하시겠습니까?</div>
+              <div class="modal-buttons">
+                <button class="modal-btn-cancel">아니요</button>
+                <button class="modal-btn-confirm">네</button>
+              </div>
+            </div>
+            <button class="modal-btn-close">닫기</button>
+          </div>
+        </div>
+        <!-- //모달 팝업 -->
+
+      </div>
+      <!--//container-->
+    </div>
+    <!--//wraaper -->
+</body>
+
+</html>

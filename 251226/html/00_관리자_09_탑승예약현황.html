@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index,follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes">
+  <meta name="title" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="../assets/css/common.css">
+   <script src="../assets/js/jquery-1.12.4.min.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <title>버스링크 관리자</title>
+</head>
+
+<body class="sub"><!-- 홈 화면일 경우 클래스 home 추가 -->
+    <div class="wraaper">
+      <div class="container">
+        <header class="app-header">
+          <div class="header-top">
+            <div class="header-inner">
+
+              <div class="header-title">
+                <a href="javascript:history.back();" class="btn-back" aria-label="뒤로가기"></a>
+                <h1 class="title">탑승예약현황</h1><!-- 화면제목   -->
+              </div>
+              <!--// header-title -->
+
+              <div class="header-actions">
+                <span class="user-name">한국관광<em>홍길동</em></span><!-- 사용자 정보 -->
+                <a href="#" class="btn-my-page" aria-label="마이페이지"></a>
+                <button type="button" class="btn-logout" aria-label="로그아웃"></button><!--  버튼이 없을 경우 class="is-hidden" 추가 -->
+              </div>
+              <!--// header-actions -->
+            </div>
+          </div>
+        </header>
+        <!--// header -->
+        <main id="colgroup" class="colgroup">
+
+            <div id="contents">
+              <div class="inner">
+                <!-- board-booking - 탑승예약 현황 -->
+                 <div class="board-booking">
+                    <!-- 카드 타입  -->
+                    <div class="card-type small-size">
+                      <div class="card-header">
+                        <div class="card-title">
+                          <span class="route-name">놀유니버스</span><!-- 노선 정보명-->
+                          <p class="route-path">
+                            <span class="route-time">07:30</span>
+                            판교역 &gt; 놀유니버스
+                          </p>
+                        </div>
+                      </div>
+                      <a href="#" class="card-more" aria-label="노선 상세 보기"></a>
+                    </div>
+                    <!--// 카드타입  -->
+                     
+                    <div class="filter-res">
+                      <div class="form-box ">
+                        <select name="" id="">
+                          <option value="">2026.01.31</option>
+                        </select>
+                      </div>
+                      <div class="radio-tab" role="radiogroup">
+                        <label><input type="radio" name="sh" checked=""><span class="dot"></span>출근</label>
+                        <label><input type="radio" name="sh"><span class="dot"></span>퇴근</label>
+                      </div>
+                    </div>
+                    <!--//filter-res  -->
+                            
+                    <!-- stats-row -->
+                    <div class="stats-row">
+                      <div class="stat">예약 <strong>40명</strong></div>
+                      <div class="stat">탑승 <strong>38명</strong></div>
+                    </div>
+                    <!-- // stats-row -->
+
+                    <!-- data-list - 예약 현황 리스트  -->
+                    <ul class="data-list line-none">
+                        <li class="item-row">
+                          <div class="u-id">USERID</div>
+                          <div class="u-name">홍길동</div>
+                          <div class="u-btns">
+                            <span class="btn"><a href="#" class="button type4 btn-sm js-modal-open" data-target="deleteModal">노쇼 <strong class="em-red">3</strong>회</a></span><!-- js-modal-open 모달 팝업 open  data-target="deleteModal" id 값 date 연결 해주면 됩니다.-->
+                            <span class="label c-gray">제한</span>
+                          </div>
+                        </li>
+                        <li class="item-row">
+                          <div class="u-id">USERID</div>
+                          <div class="u-name">박보검</div>
+                          <div class="u-btns">
+                            <span class="btn"></span>
+                            <span class="label c-blue">예약</span>
+                          </div>
+                        </li>
+                        <li class="item-row">
+                          <div class="u-id">USERID</div>
+                          <div class="u-name">조인성</div>
+                          <div class="u-btns">
+                            <span class="btn"></span>
+                            <span class="label c-pink">탑승</span>
+                          </div>
+                        </li>
+                        <li class="item-row">
+                          <div class="u-id">USERID</div>
+                          <div class="u-name">홍길동</div>
+                          <div class="u-btns">
+                            <span class="btn"><a href="#" class="button type4 btn-sm js-modal-open" data-target="deleteModal">노쇼 <strong class="em-red">3</strong>회</a></span>
+                            <span class="label c-gray">제한</span>
+                          </div>
+                        </li>
+                        <li class="item-row">
+                          <div class="u-id">USERID</div>
+                          <div class="u-name">조인성</div>
+                          <div class="u-btns">
+                            <span class="btn"></span>
+                            <span class="label c-pink">탑승</span>
+                          </div>
+                        </li>
+                        <li class="item-row">
+                          <div class="u-id">USERID</div>
+                          <div class="u-name">강하늘</div>
+                          <div class="u-btns">
+                            <span class="btn"></span>
+                            <span class="label c-blue">예약</span>
+                          </div>
+                        </li>
+                        <li class="item-row">
+                          <div class="u-id">USERID</div>
+                          <div class="u-name">강하늘</div>
+                          <div class="u-btns">
+                            <span class="btn"></span>
+                            <span class="label c-blue">예약</span>
+                          </div>
+                        </li>
+                        <li class="item-row">
+                          <div class="u-id">USERID</div>
+                          <div class="u-name">조정석</div>
+                          <div class="u-btns">
+                            <span class="btn"><a href="#" class="button type4 btn-sm js-modal-open" data-target="deleteModal">노쇼 <strong class="em-red">3</strong>회</a></span>
+                            <span class="label c-gray">제한</span>
+                          </div>
+                        </li>
+                        <li class="item-row">
+                          <div class="u-id">USERID</div>
+                          <div class="u-name">유연석</div>
+                          <div class="u-btns">
+                            <span class="btn"></span>
+                            <span class="label c-pink">예약</span>
+                          </div>
+                        </li>
+
+                    </ul>
+                    <!-- // data-list - 예약 현황 리스트  -->
+                </div>
+                <!--// board-booking - 탑승예약 현황  -->
+              </div>
+              <!--// content_inner -->
+            </div>
+            <!-- //contents -->
+
+          <div class="app-footer">
+            <div class="inner-area">
+              <button type="button" class="btn-footer btn-footer-home"><span>홈</span></button>
+              <button type="button" class="btn-footer btn-footer-schedule"><span>배차관리</span></button>
+              <button type="button" class="btn-footer btn-footer-tracking"><span>차량관제</span></button>
+              <button type="button" class="btn-footer btn-footer-checking"><span>탑승자승인</span></button>
+              <button type="button" class="btn-footer btn-footer-bookings"><span>에약관리</span></button>
+            </div>
+          </div>
+          <!-- //app-footer -->
+        </main>
+        <!-- //main.colgroup -->
+      </div>
+      <!--//container-->
+
+      <!-- modal-overlay 모달 팝업 -  노쇼 제한-->
+      <div class="modal-overlay" id="deleteModal">
+        <div class="modal">
+          <div class="modal-inner">
+            <div class="modal-message">노쇼 탑승제한을<br>하시겠습니까?</div>
+            <div class="modal-buttons">
+              <button class="modal-btn modal-btn-cancel js-modal-close">아니요</button>
+              <button class="modal-btn modal-btn-confirm">네</button>
+            </div>
+          </div>
+          <button type="button" class="modal-btn-close">닫기</button>
+        </div>
+      </div>
+      <!-- //모달 팝업 -  노쇼 제한-->
+
+      <!-- popup-wrap -전체 팝업 -->
+      <div class="popup-wrap"><!-- 전체 팝업일 경우 클래스 full 추가, 활성화시 클래스 active 추가 -->
+        <div class="inner-area">
+          <div class="popup-header">
+            <div class="title">제목</div>
+          </div>
+          <div class="popup-container">
+            내용
+          </div>
+          <!-- //popup-container -->
+          <div class="popup-bottom">
+            <button type="button">예</button>
+          </div>
+          <button type="button" class="popup-close">팝업 닫기</button>
+        </div>
+      </div>
+      <!-- // popup-wrap - 전체 팝업 -->
+    </div>
+    <!--//wrap -->
+</body>
+
+</html>
